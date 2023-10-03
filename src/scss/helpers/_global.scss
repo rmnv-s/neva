@@ -1,0 +1,22 @@
+@use 'fonts';
+@use 'color';
+
+* {
+  &,
+  &::after,
+  &::before {
+    box-sizing: inherit;
+  }
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  box-sizing: border-box;
+  font-size: 62.5%;
+  scroll-behavior: smooth;
+}
+
+.root {
+  font-family: 'Circe', sans-serif;
+}

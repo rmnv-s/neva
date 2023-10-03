@@ -1,0 +1,79 @@
+@use 'helpers/color' as *;
+
+.footer {
+  background-color: $main-black;
+  padding: 7rem 0;
+  color: $font-white;
+
+  @media (max-width: 1024px) {
+    padding: 5rem 0 4.5rem 0;
+  }
+}
+
+.item {
+  display: flex;
+  margin-bottom: 5.5rem;
+
+  @media (max-width: 425px) {
+    flex-direction: column;
+    margin-bottom: 1.5rem;
+  }
+
+  & :first-child {
+    margin-right: 3rem;
+
+    @media (max-width: 1024px) {
+      margin-right: 2.5rem;
+    }
+
+    @media (max-width: 425px) {
+      margin-right: 0;
+      margin-bottom: 1rem;
+    }
+  }
+
+  &__list {
+    list-style-type: none;
+
+    &-link {
+      color: $font-white;
+      text-decoration: none;
+
+      font-size: 2.2rem;
+      line-height: 3.2rem;
+      font-weight: bold;
+
+      padding: 1.8rem 13.2rem;
+
+      border: 1px solid $font-white;
+      border-radius: 4rem;
+
+      @media (max-width: 1024px) {
+        font-size: 1.6rem;
+        line-height: 2.3rem;
+      }
+
+      @media (max-width: 425px) {
+        display: block;
+        padding: 12px 0;
+        min-width: 100%;
+        text-align: center;
+      }
+    }
+  }
+}
+
+.stock {
+  font-size: 2.2rem;
+  line-height: 3.2rem;
+
+  @media (max-width: 1024px) {
+    font-size: 1.6rem;
+    line-height: 2.3rem;
+  }
+
+  @media (max-width: 425px) {
+    font-size: 1.2rem;
+    line-height: 1.4rem;
+  }
+}
